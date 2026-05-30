@@ -1,70 +1,47 @@
 import React from 'react';
-import { SiNodeDotJs, SiAngular, SiAmazonaws } from 'react-icons/si';
+import { SiAmazonaws, SiAngular, SiNodeDotJs } from 'react-icons/si';
+
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { Card, CardIcon, CardTitle, Pill, PillList, TechGrid } from './TechnologiesStyles';
 
-const Technologies = () =>  (
-<Section id="tech">
- <SectionDivider/>
- <br/>
- <br/>
+const techStack = [
+  {
+    icon: <SiNodeDotJs size="3.2rem" color="#68a063" />,
+    title: 'Back-End',
+    items: ['Node JS', 'Go', 'Express', 'NestJS', 'Supabase'],
+  },
+  {
+    icon: <SiAngular size="3.2rem" color="#dd0031" />,
+    title: 'Front-End',
+    items: ['React', 'Angular', 'Flutter', 'Swift', 'Next JS', 'TanStack Start'],
+  },
+  {
+    icon: <SiAmazonaws size="3.2rem" color="#f59e0b" />,
+    title: 'Cloud & Data',
+    items: ['AWS', 'Claude Code', 'PostgreSQL', 'MongoDB', 'DigitalOcean'],
+  },
+];
 
- <SectionTitle>Technologies</SectionTitle>
- <SectionText>
-   I build across the full stack — from performant APIs and backend services to polished, responsive frontends — using modern tools and cloud infrastructure to ship production-ready products.
- </SectionText>
- <List>
-
- <ListItem>
-     <SiNodeDotJs size="3rem"/>
-       <ListContainer>
-         <ListTitle>Back-End</ListTitle>
-         <ListParagraph>
-           <br/>
-           Node JS <br/>
-           Go <br/>
-           Express <br/>
-           NestJS <br/>
-           Supabase
-         </ListParagraph>
-       </ListContainer>
-   </ListItem>
-
-   <ListItem>
-     <SiAngular size="3rem"/>
-       <ListContainer>
-         <ListTitle>Front-End</ListTitle>
-         <ListParagraph>
-            <br/>
-           React <br/>
-           Angular <br/>
-           Flutter <br/>
-           Swift <br/>
-           Next JS <br/>
-           TanStack Start
-         </ListParagraph>
-       </ListContainer>
-   </ListItem>
-
-   <ListItem>
-     <SiAmazonaws size="3rem"/>
-       <ListContainer>
-         <ListTitle>Cloud & Data</ListTitle>
-         <ListParagraph>
-            <br/>
-           AWS <br/>
-           Claude Code <br/>
-           PostgreSQL <br/>
-           MongoDB <br/>
-           DigitalOcean 
-         </ListParagraph>
-       </ListContainer>
-   </ListItem>
-
- </List>
-
-
-</Section>
+const Technologies = () => (
+  <Section id="tech">
+    <SectionDivider />
+    <SectionTitle>Technologies</SectionTitle>
+    <SectionText>
+      I build across the full stack — from performant APIs and backend services to polished,
+      responsive frontends — using modern tools and cloud infrastructure to ship production-ready products.
+    </SectionText>
+    <TechGrid>
+      {techStack.map(({ icon, title, items }) => (
+        <Card key={title}>
+          <CardIcon>{icon}</CardIcon>
+          <CardTitle>{title}</CardTitle>
+          <PillList>
+            {items.map((item, i) => <Pill key={i}>{item}</Pill>)}
+          </PillList>
+        </Card>
+      ))}
+    </TechGrid>
+  </Section>
 );
 
 export default Technologies;

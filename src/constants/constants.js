@@ -39,6 +39,37 @@ export const projects = [
   },
 ];
 
+export const experiences = [
+  {
+    period: 'Sept 2021 – Nov 2022',
+    company: 'Business Interaspect',
+    role: 'Full Stack Developer',
+    description: 'Kickstarted my career building the company\'s web presence and internal tools for a BPO operation. Delivered responsive frontends in React and backend APIs in Node.js, turning designs into working products.',
+    current: false,
+  },
+  {
+    period: 'Dec 2022 – Jul 2023',
+    company: 'TCL Global Ltd.',
+    role: 'Software Developer',
+    description: 'Contributed to cross-functional software projects in a multinational environment, building product features and maintaining web services across multiple client deliverables.',
+    current: false,
+  },
+  {
+    period: 'Jul 2023 – Aug 2024',
+    company: 'Adventure Dhaka Ltd.',
+    role: 'Software Developer',
+    description: 'Led development of booking and customer management platforms for a growing travel company, shipping custom software that measurably improved operational workflows.',
+    current: false,
+  },
+  {
+    period: 'Aug 2024 – Present',
+    company: 'Binate Solutions Ltd.',
+    role: 'Software Developer',
+    description: 'Designing and building production-ready products across web and mobile — architecting systems end-to-end using React, Angular, Node.js, TypeScript, and AWS, with a focus on quality and scale.',
+    current: true,
+  },
+];
+
 export const TimeLineData = [
   { year: 2021, text: 'Graduated with a B.Sc. in Computer Science from AIUB.' },
   { year: 2022, text: 'Transitioned from intern to full-time software engineer — officially started my professional career.' },

@@ -1,134 +1,86 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const Boxes = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin: 24px 0 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 8px 0 64px;
 
-  @media ${props => props.theme.breakpoints.md}{
+  @media ${props => props.theme.breakpoints.md} {
+    grid-template-columns: 1fr;
     gap: 16px;
-    margin: 20px 0 32px;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    margin: 8px 0 48px;
   }
 
-  @media ${props => props.theme.breakpoints.sm}{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    max-width: 500px;
-    margin: 24px auto;
+  @media ${props => props.theme.breakpoints.sm} {
+    gap: 12px;
+    margin: 8px 0 40px;
   }
 `
 
 export const Box = styled.div`
-  background: #212D45;
-  border-radius: 12px;
-  height: 200px;
-  padding: 24px;
-  @media ${props => props.theme.breakpoints.lg} {
-    height: 250px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 32px 28px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s ease, transform 0.3s ease;
 
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #6366f1 0%, #22d3ee 100%);
+  }
+
+  &:hover {
+    border-color: rgba(99, 102, 241, 0.22);
+    transform: translateY(-4px);
   }
 
   @media ${props => props.theme.breakpoints.md} {
-    height: 135px;
-    padding: 16px;
-  }
-
-  @media ${props => props.theme.breakpoints.sm} {
-    height: 110px;
-    padding: 12px;
-    
-    &:nth-child(2n){
-      grid-row:2;
-    }
+    padding: 24px 20px;
   }
 `
-export const BoxNum = styled.h5`
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 40px;
-  letter-spacing: 0.01em;
-  color: #FFFFFF;
-  margin-bottom: 8px;
+
+export const BoxNum = styled.h3`
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  background: linear-gradient(135deg, #6366f1 0%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 14px;
 
   @media ${props => props.theme.breakpoints.md} {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 44px;
   }
+
   @media ${props => props.theme.breakpoints.sm} {
-    font-size: 24px;
-    line-height: 26px;
-}
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
 `
 
 export const BoxText = styled.p`
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.75);
-
-  @media ${props => props.theme.breakpoints.md}{
-    font-size: 16px;
-    line-height: 20px;
-  };
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: rgba(241, 245, 249, 0.55);
+  font-weight: 400;
 
   @media ${props => props.theme.breakpoints.sm} {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
   }
 `
 
-export const Join = styled.div`
-  display: flex;
-  max-width: 1040px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 80px;
-
-  @media ${props => props.theme.breakpoints.md}{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 64px;
-  }
-
-  @media ${props => props.theme.breakpoints.sm}{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 32px;
-  }
-`
-
-export const JoinText = styled.h5`
-  display: flex;
-  font-size: 24px;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.5);
-
-@media ${props => props.theme.breakpoints.md}{
-  line-height: 32px;
-  font-size: 20px;
-};
-
-@media ${props => props.theme.breakpoints.sm}{
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0 0 16px;
-}
-`
-
-export const IconContainer = styled.div`
-  display: flex;
-
-  @media ${props => props.theme.breakpoints.sm}{
-    width: 160px;
-    justify-content: space-between;
-  }
-`
+/* Legacy exports */
+export const Join = styled.div``
+export const JoinText = styled.h5``
+export const IconContainer = styled.div``

@@ -1,133 +1,84 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-export const ImageContainer = styled.div`
-  text-align: center;
-  background-image: radial-gradient(50% 50% at 50% 50%, rgba(79, 108, 176, 0.25) 53.8%, rgba(79, 108, 176, 0) 100%);
-  width: 100%;
-  padding: 60px;
-  margin-top: 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  @media ${props => props.theme.breakpoints.lg} {
-    background-image: none;
-    padding: 0;
-    margin-top: 40px;
-  }
-  @media ${props => props.theme.breakpoints.md} {
-    background-image: none;
-    padding: 0;
-    margin-top: 16px;
-  }
-`
-
-export const MainImage = styled.img`
-  width: 100%;
-`
-
-export const List = styled.ul`
-  list-style-type: none;
+export const TechGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin: 3rem 0;
-  
-  @media ${props => props.theme.breakpoints.lg}{
-    margin: 64px 0;
+  gap: 20px;
+  margin: 8px 0 56px;
+
+  @media ${props => props.theme.breakpoints.md} {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+`;
+
+export const Card = styled.div`
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 28px 24px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, #6366f1 0%, #22d3ee 100%);
+    border-radius: 16px 0 0 16px;
   }
 
-  @media ${props => props.theme.breakpoints.md}{
-    margin: 64px 0;
-    gap: 24px
+  &:hover {
+    border-color: rgba(99, 102, 241, 0.22);
+    transform: translateY(-4px);
   }
-  
-  @media ${props => props.theme.breakpoints.sm}{
-    display: flex;
-    flex-direction: column;
-    margin: 32px 0;
-  }
-`
+`;
 
-export const ListContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media ${props => props.theme.breakpoints.sm}{
-    display: flex;
-    margin-left: 18px;
-  }
-`
-
-export const ListTitle = styled.h4`
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 32px;
-  letter-spacing: 0.02em;
-  color: #FFFFFF;
-  margin-bottom: 8px;
-
-@media ${props => props.theme.breakpoints.md}{
-  font-size: 24px;
-  line-height: 28px;
-}
-
-@media ${props => props.theme.breakpoints.sm}{
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  margin-bottom: 4px;
-}
-`
-
-export const ListParagraph = styled.p`
-  font-size: 18px;
-  line-height: 30px;
-  color: rgba(255, 255, 255, 0.75);
-
-  @media ${props => props.theme.breakpoints.md}{
-    font-size: 16px;
-    line-height: 28px;
-  }
-
-  @media ${props => props.theme.breakpoints.sm}{
-    font-size: 14px;
-    line-height: 22px;
-  }
-`
-
-export const ListItem = styled.li`
-  max-width: 320px;
-  display: flex;
-  flex-direction: column;
-
-@media ${props => props.theme.breakpoints.md}{
-  max-width: 203px;
-}
-
-@media ${props => props.theme.breakpoints.sm}{
+export const CardIcon = styled.div`
   margin-bottom: 14px;
-  max-width: 320px;
-  flex-direction: row;
-}
-`
+  display: flex;
+`;
 
-export const ListIcon = styled.img`
-  display: block;
-  width: 48px;
-  height: 48px;
-  margin-bottom: 10px;
-  
-  @media ${props => props.theme.breakpoints.md}{
-    width: 40px;
-    height: 40px;
-    margin-bottom: 8px;
-  }
+export const CardTitle = styled.h4`
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+`;
 
-  @media ${props => props.theme.breakpoints.sm}{
-    width: 32px;
-    height: 32px;
-    margin-bottom: 0px;
+export const PillList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+`;
+
+export const Pill = styled.span`
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: rgba(241, 245, 249, 0.65);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 4px 14px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    border-color: rgba(99, 102, 241, 0.3);
+    color: rgba(241, 245, 249, 0.9);
   }
-`
+`;
+
+/* Legacy exports */
+export const List = styled.ul``;
+export const ListContainer = styled.div``;
+export const ListTitle = styled.h4``;
+export const ListParagraph = styled.p``;
+export const ListItem = styled.li``;
+export const ListIcon = styled.img``;
+export const ImageContainer = styled.div``;
+export const MainImage = styled.img``;
