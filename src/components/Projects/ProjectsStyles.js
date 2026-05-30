@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
-export const GridContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 24px;
-  padding: 24px 0 56px;
-  width: 100%;
+/* Replaced by carousel — kept for any legacy reference */
+export const GridContainer = styled.div``;
 
-  @media screen and (max-width: 640px) {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px 0 40px;
-  }
+export const CarouselViewport = styled.div`
+  overflow: hidden;
+  width: 100%;
+  padding: 24px 0 56px;
+`;
+
+export const CarouselTrack = styled.div`
+  display: flex;
+  will-change: transform;
 `;
 
 export const BlogCard = styled.div`
