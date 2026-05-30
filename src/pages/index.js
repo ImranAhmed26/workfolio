@@ -1,4 +1,5 @@
 import Acomplishments from '../components/Acomplishments/Acomplishments';
+import Experience from '../components/Experience/Experience';
 import Hero from '../components/Hero/Hero';
 import Projects from '../components/Projects/Projects';
 import Technologies from '../components/Technologies/Technologies';
@@ -9,9 +10,10 @@ const Home = () => {
   return (
     <Layout>
       <Hero />
-      <Projects />
       <Technologies />
+      <Experience />
       <Timeline />
+      <Projects />
       <Acomplishments />
     </Layout>
   );
