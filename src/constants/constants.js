@@ -1,12 +1,11 @@
 export const projects = [
   {
-    title: 'Avenir Ip Ltd',
-    // description: "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-    description:"This is the Landing page for the first software development company I first started achieving great things with. The source code is not available as this is a company project.",  
+    title: 'Bookmot',
+    description: 'A vehicle booking platform for MOT registrations and car servicing in the UK. Built to streamline appointment scheduling and service management for garages and their customers.',
     image: '/images/1.jpg',
-      tags: ['React','Next JS', 'Tailwind CSS'],
-    source: 'https://aveniripltd.com',
-    visit: 'https://aveniripltd.com',
+    tags: ['Angular', 'Django', 'MySQL', 'AWS'],
+    source: 'https://bookmot.com',
+    visit: 'https://bookmot.com',
     id: 0,
   },
   {
@@ -14,8 +13,8 @@ export const projects = [
     description:"I am a part of this long term MERN Stack project that is a closed community recycling plastic trading hub.The source code is not available as this is a company project.",
     image: '/images/2.jpg',
     tags: [ 'Node JS','React','MongoDB', 'Tailwind'],
-    source: 'https://dev.gprc.us',
-    visit: 'https://dev.gprc.us',
+    source: 'https://gprc.us',
+    visit: 'https://gprc.us',
     id: 1,
   },
   {
@@ -33,7 +32,7 @@ export const projects = [
     image: '/images/4.jpg',
     tags: ['React','Next JS', 'Tailwind CSS'],
     source: 'https://github.com/ImranAhmed26/Business-Interaspect',
-    visit: 'https://business-interaspect.vercel.app/',
+    visit: 'https://businessinteraspect.com',
     id: 3,
   },
 ];
