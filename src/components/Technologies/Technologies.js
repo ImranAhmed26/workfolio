@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiGoogleAnalytics, DiPhotoshop, DiReact } from 'react-icons/di';
+import { SiNodeDotJs, SiAngular, SiAmazonaws } from 'react-icons/si';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -11,55 +11,59 @@ const Technologies = () =>  (
 
  <SectionTitle>Technologies</SectionTitle>
  <SectionText>
-   I've worked with a range of Technologies in the web developement sector mostly using the MERN Stack.
+   I build across the full stack — from performant APIs and backend services to polished, responsive frontends — using modern tools and cloud infrastructure to ship production-ready products.
  </SectionText>
  <List>
- 
+
  <ListItem>
-     <DiGoogleAnalytics size="3rem"/>
+     <SiNodeDotJs size="3rem"/>
        <ListContainer>
-         <ListTitle>Back-End </ListTitle>
+         <ListTitle>Back-End</ListTitle>
          <ListParagraph>
            <br/>
            Node JS <br/>
+           Go <br/>
            Express <br/>
-           Mongoose<br/>
+           NestJS <br/>
+           Supabase
          </ListParagraph>
        </ListContainer>
    </ListItem>
 
    <ListItem>
-     <DiReact size="3rem"/>
+     <SiAngular size="3rem"/>
        <ListContainer>
          <ListTitle>Front-End</ListTitle>
          <ListParagraph>
             <br/>
-           React.JS  <br/>
-           JavaScript  <br/>
-           CSS   <br/>
-           Bootstrap
+           React <br/>
+           Angular <br/>
+           Flutter <br/>
+           Swift <br/>
+           Next JS <br/>
+           TanStack Start
          </ListParagraph>
        </ListContainer>
    </ListItem>
 
    <ListItem>
-     <DiPhotoshop size="3rem"/>
+     <SiAmazonaws size="3rem"/>
        <ListContainer>
-         <ListTitle>Graphics and Text</ListTitle>
+         <ListTitle>Cloud & Data</ListTitle>
          <ListParagraph>
             <br/>
-           Adobe Photoshob <br/>
-           Adobe Illustrator <br/>
-           MS Powerpoint<br/>
-           MS Word<br/>
-           MS Excel
+           AWS <br/>
+           Claude Code <br/>
+           PostgreSQL <br/>
+           MongoDB <br/>
+           DigitalOcean 
          </ListParagraph>
        </ListContainer>
    </ListItem>
 
  </List>
- 
- 
+
+
 </Section>
 );
 

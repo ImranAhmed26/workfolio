@@ -1,12 +1,12 @@
 export const projects = [
   {
-    title: 'Avenir Ip Ltd',
-    // description: "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-    description:"This is the Landing page for the first software development company I first started achieving great things with. The source code is not available as this is a company project.",  
+    title: 'Bookmot',
+    description: 'A vehicle booking platform for MOT registrations and car servicing in the UK. Built to streamline appointment scheduling and service management for garages and their customers.',
     image: '/images/1.jpg',
-      tags: ['React','Next JS', 'Tailwind CSS'],
-    source: 'https://aveniripltd.com',
-    visit: 'https://aveniripltd.com',
+    tags: ['Angular', 'Django', 'MySQL', 'AWS'],
+    source: 'https://bookmot.com',
+    visit: 'https://bookmot.com',
+    hideCode: true,
     id: 0,
   },
   {
@@ -14,8 +14,9 @@ export const projects = [
     description:"I am a part of this long term MERN Stack project that is a closed community recycling plastic trading hub.The source code is not available as this is a company project.",
     image: '/images/2.jpg',
     tags: [ 'Node JS','React','MongoDB', 'Tailwind'],
-    source: 'https://dev.gprc.us',
-    visit: 'https://dev.gprc.us',
+    source: 'https://gprc.us',
+    visit: 'https://gprc.us',
+    hideCode: true,
     id: 1,
   },
   {
@@ -33,14 +34,14 @@ export const projects = [
     image: '/images/4.jpg',
     tags: ['React','Next JS', 'Tailwind CSS'],
     source: 'https://github.com/ImranAhmed26/Business-Interaspect',
-    visit: 'https://business-interaspect.vercel.app/',
+    visit: 'https://businessinteraspect.com',
     id: 3,
   },
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: 'Started my undergraduation at AIUB', },
-  { year: 2020, text: 'Completed 3 programming cources from Coursera.com', },
-  { year: 2021, text: 'Graduated from AIUB', },
-  {year: 2022, text: 'Started working as a Jr. Software Engineer for Avenir Ip Ltd.'},
+  { year: 2021, text: 'Graduated with a B.Sc. in Computer Science from AIUB.' },
+  { year: 2022, text: 'Transitioned from intern to full-time software engineer — officially started my professional career.' },
+  { year: 2025, text: 'Went fully AI-assisted — Claude Code, Copilot, Codex, Trae and more. Shipping faster than ever.' },
+  { year: 2026, text: '10 production projects across frontend, backend, and iOS. Still building.' },
 ];

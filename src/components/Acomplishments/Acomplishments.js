@@ -6,9 +6,8 @@ import { Box, Boxes, BoxNum, BoxText } from "./AcomplishmentsStyles";
 const data = [
   { number: 16, text: "Months of volunteering under IEEE AIUB Student Branch" },
   {
-    number: 8,
-    text1: "",
-    text: "Projects compeleted using Node JS, React,  Tailwind CSS and Bootstrap",
+    number: 10,
+    text: "Production apps across web and mobile — TypeScript, Node.js, React, Angular, Flutter",
   },
   { number: 3, text: "Certificates on React, Web Developement and front-end UI Frame work " },
 ];

@@ -46,12 +46,13 @@ const Timeline = () => {
 <Section id="about">
     <SectionTitle>About Me</SectionTitle>
     <SectionText>
-    
-     I love coding in JavaScript and like to keep developing my programming skills everyday.
-     My vision is to design and develop minimalistic and cutting edge web applications. <br/>
-     Currently, I am employed as a MERN Stack developer.
 
-    </SectionText>
+     I'm a full-stack developer based in Dhaka with a focus on building reliable, scalable web applications and backend systems.
+     Over the years I've worked across the stack — designing REST APIs, architecting cloud infrastructure on AWS, and delivering responsive frontends with React and Angular. <br/><br/>
+     I enjoy working on products that solve real problems, and I take pride in writing clean, maintainable code that teams can build on.
+     When I'm not shipping features, I'm exploring new tools and keeping up with what's moving in the industry.
+
+</SectionText>
     <br/>
     <br/>
     <br/>
