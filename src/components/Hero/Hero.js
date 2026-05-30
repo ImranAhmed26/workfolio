@@ -12,7 +12,7 @@ const Hero = () => (
         I'm Imran Ahmed
       </SectionTitle>
       <SectionText>
-      A programming enthusiast in love with JavaScrip. Based in Dhaka currently I am employed as a Jr. Fullstack Developer and developing web applications using the MERN Stack.
+      Full-stack developer from Dhaka focused on building production-ready web applications, backend systems, and API-driven products using React, Angular, Node Js, TypeScript, MongoDB,  PostgreSQL, AWS services, Claude code and more.
       </SectionText>
       <Button onClick = {() => window.location = 'https://drive.google.com/file/d/1X7Y6dGAg_aNowdsmHwLacxWEU8LAt1RN/view?usp=share_link' } > Resume </Button>
        </LeftSection>
