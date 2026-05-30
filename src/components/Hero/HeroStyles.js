@@ -19,17 +19,43 @@ const pulse = keyframes`
 export const HeroSection = styled.section`
   max-width: 1040px;
   margin: 0 auto;
-  padding: 148px 48px 96px;
+  padding: 140px 48px 80px;
   box-sizing: content-box;
   animation: ${fadeUp} 0.75s ease forwards;
 
   @media screen and (max-width: 768px) {
-    padding: 120px 48px 72px;
+    padding: 116px 48px 64px;
   }
 
   @media screen and (max-width: 640px) {
-    padding: 100px 16px 56px;
+    padding: 100px 16px 48px;
     width: calc(100vw - 32px);
+  }
+`;
+
+export const HeroGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 32px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const HeroLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const HeroRight = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -45,7 +71,7 @@ export const HeroBadge = styled.span`
   border-radius: 999px;
   padding: 6px 16px;
   width: fit-content;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
@@ -64,19 +90,19 @@ export const HeroSubtitle = styled.p`
   font-size: 1.9rem;
   line-height: 3.2rem;
   color: rgba(241, 245, 249, 0.52);
-  max-width: 580px;
+  max-width: 520px;
   font-weight: 400;
-  margin-bottom: 44px;
+  margin-bottom: 40px;
 
   @media screen and (max-width: 768px) {
     font-size: 1.7rem;
     line-height: 2.8rem;
-    margin-bottom: 36px;
+    margin-bottom: 32px;
   }
 
   @media screen and (max-width: 640px) {
     font-size: 1.5rem;
     line-height: 2.5rem;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
 `;
