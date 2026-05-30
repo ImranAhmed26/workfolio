@@ -10,7 +10,7 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
         <LinkTitle>Call</LinkTitle>
-        <LinkItem href="tel:01787939051">01787939051</LinkItem>
+        <LinkItem href="tel:+8801787939051">+880 1787939051</LinkItem>
         </LinkColumn>
         <LinkColumn>
         <LinkTitle>Email</LinkTitle>
@@ -19,18 +19,18 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan> Imran Ahmed | 2022 </Slogan>
+          <Slogan> Imran Ahmed | 2026 </Slogan>
         </CompanyContainer>
         <SocialContainer>
-        <SocialIcons href="https://github.com/ImranAhmed26">
+        <SocialIcons href="https://github.com/ImranAhmed26" target="_blank" rel="noopener noreferrer">
       <AiFillGithub size="3rem"/>
     </SocialIcons>
 
-    <SocialIcons href="https://www.linkedin.com/in/imran-ahmed-9a0375142/">
+    <SocialIcons href="https://www.linkedin.com/in/imran-ahmed-9a0375142/" target="_blank" rel="noopener noreferrer">
       <AiFillLinkedin size="3rem"/>
     </SocialIcons>
 
-    <SocialIcons href="https://www.instagram.com/ahmmed_imraan">
+    <SocialIcons href="https://www.instagram.com/ahmmed_imraan" target="_blank" rel="noopener noreferrer">
       <AiFillInstagram size="3rem"/>
     </SocialIcons>
     </SocialContainer>

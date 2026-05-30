@@ -14,7 +14,7 @@ const Hero = () => (
       <SectionText>
       Full-stack developer from Dhaka focused on building production-ready web applications, backend systems, and API-driven products using React, Angular, Node Js, TypeScript, MongoDB,  PostgreSQL, AWS services, Claude code and more.
       </SectionText>
-      <Button onClick = {() => window.location = 'https://drive.google.com/file/d/1kbwG9HQ5Y8uWyvaJGoeB1ItZSD0JGzkd/view?usp=sharing' } > Resume </Button>
+      <Button onClick = {() => window.open('https://drive.google.com/file/d/1kbwG9HQ5Y8uWyvaJGoeB1ItZSD0JGzkd/view?usp=sharing', '_blank', 'noopener,noreferrer')} > Resume </Button>
        </LeftSection>
     
  </Section>

@@ -40,8 +40,8 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: 'Started my undergraduation at AIUB', },
-  { year: 2020, text: 'Completed 3 programming cources from Coursera.com', },
-  { year: 2021, text: 'Graduated from AIUB', },
-  {year: 2022, text: 'Started working as a Jr. Software Engineer for Avenir Ip Ltd.'},
+  { year: 2021, text: 'Graduated with a B.Sc. in Computer Science from AIUB.' },
+  { year: 2022, text: 'Transitioned from intern to full-time software engineer — officially started my professional career.' },
+  { year: 2025, text: 'Went fully AI-assisted — Claude Code, Copilot, Codex, Trae and more. Shipping faster than ever.' },
+  { year: 2026, text: '10 production projects across frontend, backend, and iOS. Still building.' },
 ];
