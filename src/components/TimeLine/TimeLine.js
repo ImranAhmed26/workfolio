@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
 import {
   CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer,
@@ -42,13 +42,6 @@ const Timeline = () => {
 
   return (
     <Section id="about">
-      <SectionDivider />
-      <SectionTitle>About Me</SectionTitle>
-      <SectionText>
-        I'm a full-stack developer based in Dhaka with a focus on building reliable, scalable
-        web applications and backend systems. I take pride in writing clean, maintainable code
-        that teams can build on — and I'm always exploring what's moving in the industry.
-      </SectionText>
       <TimelineLabel>Career Milestones</TimelineLabel>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
