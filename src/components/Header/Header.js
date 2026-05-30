@@ -12,9 +12,10 @@ const Header = () => (
       </Link>
     </Div1>
     <Div2>
-      <li><Link href="#projects"><NavLink>Projects</NavLink></Link></li>
-      <li><Link href="#tech"><NavLink>Tech</NavLink></Link></li>
       <li><Link href="#about"><NavLink>About</NavLink></Link></li>
+      <li><Link href="#tech"><NavLink>Tech</NavLink></Link></li>
+      <li><Link href="#experience"><NavLink>Experience</NavLink></Link></li>
+      <li><Link href="#projects"><NavLink>Projects</NavLink></Link></li>
     </Div2>
     <Div3>
       <SocialIcons href="https://github.com/ImranAhmed26" target="_blank" rel="noopener noreferrer">

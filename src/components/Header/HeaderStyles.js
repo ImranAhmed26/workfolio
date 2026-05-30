@@ -44,7 +44,11 @@ export const Div1 = styled.div`
 export const Div2 = styled.div`
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 28px;
+
+  @media screen and (max-width: 768px) {
+    gap: 20px;
+  }
 
   @media screen and (max-width: 640px) {
     display: none;
