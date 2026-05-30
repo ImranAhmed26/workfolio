@@ -6,6 +6,7 @@ export const projects = [
     tags: ['Angular', 'Django', 'MySQL', 'AWS'],
     source: 'https://bookmot.com',
     visit: 'https://bookmot.com',
+    hideCode: true,
     id: 0,
   },
   {
@@ -15,6 +16,7 @@ export const projects = [
     tags: [ 'Node JS','React','MongoDB', 'Tailwind'],
     source: 'https://gprc.us',
     visit: 'https://gprc.us',
+    hideCode: true,
     id: 1,
   },
   {
